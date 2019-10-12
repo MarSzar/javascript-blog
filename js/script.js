@@ -57,7 +57,9 @@
   /* [DONE] remove contents of titleList */
   const titleList = document.querySelector(optTitleListSelector).innerHTML = '';
 
-  /* for each article */
+  /* [DONE] for each article */
+  const articles = document.querySelectorAll(optArticleSelector);
+  for (let article of articles) {
 
     /* get the article id */
 
@@ -68,7 +70,7 @@
     /* create HTML of the link */
 
     /* insert link into titleList */
-
+  }
 }
 
 generateTitleLinks();
