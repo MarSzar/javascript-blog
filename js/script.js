@@ -64,8 +64,9 @@
     /* [DONE] get the article id */
     const articleId = article.getAttribute('id');
     
-    /* find the title element */
-
+    /* [DONE] find the title element */
+    const articleTitle = article.querySelector(optTitleSelector).innerHTML;
+    
     /* get the title from the title element */
 
     /* create HTML of the link */
