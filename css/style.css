@@ -81,6 +81,10 @@ body {
   display: inline-block;
 }
 
+a {
+  margin-left: 10px;
+}
+
 /* Authors */
 .authors li {
   margin-bottom: 12px;
