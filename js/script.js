@@ -94,6 +94,31 @@ for(let link of links){
 }
 
 /*TAGS*/
+/* [NEW] function looking for the smallest and highest number of tags */
+function calculateTagsParams(tags) {
+  
+  /* [NEW] create an object params with max and min values */
+  const params = {
+    max: 0,
+    min: 999999
+  };
+
+  /* START LOOP: for every tag */  
+  for(let tag in tags) {
+    console.log(tag + ' is used ' + tags[tag] + ' times');
+  
+    /* [NEW] find the largest value and set it as params.max value */
+    params.max = Math.max(tags[tag], params.max);
+
+    /* [NEW] find the smallest value and set it as params.min value */
+    params.min = Math.min(tags[tag], params.min);
+  
+  /*END LOOP: for every tag */
+  }
+  /*return object */
+  return params;
+}
+
 function generateTags(){
   /* [NEW] create a new variable allTags with an empty object */
   let allTags = {};
@@ -149,6 +174,8 @@ function generateTags(){
   const tagList = document.querySelector('.tags');
 
   /* [NEW] create variable for all links HTML code */
+  const tagsParams = calculateTagsParams(allTags);
+  console.log('tagsParams:', tagsParams)
   let allTagsHTML = '';
 
   /* [NEW] START LOOP: for each tag in allTags: */
