@@ -82,17 +82,25 @@ body {
   padding: 0;
   .active {
     font-weight: bold;
+    color: red;
   }
 }
 
 .list-horizontal {
   li {
+    margin-left: 10px;
     display: inline-block;
   }
 }
 
 a {
-  margin-left: 10px;
+  text-decoration: none;
+}
+
+.list { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Authors */
@@ -114,6 +122,7 @@ a {
 
 .post-author {
   font-style: italic;
+  list-style-type: none;
 }
 
 .post-tags {
@@ -121,4 +130,42 @@ a {
   p {
     margin: 0 10px 0 0;
   }
+}
+
+/* Tag Cloud */
+.tags li, .authors li {
+  padding: 0;
+  line-height: 1;
+  margin: 0;
+  display: inline-block;
+}
+
+a[class$="5"] {
+  color: #050d3e;
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+a[class$="4"] {
+  color: #172684;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+a[class$="3"] {
+  color: #2c3eab;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+a[class$="2"] {
+  color: #4c5fce;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+a[class$="1"] {
+  color: #898fb5;
+  font-size: 19px;
+  font-weight: 600;
 }
