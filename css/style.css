@@ -24,6 +24,8 @@ body { background: #fff; font-family: "Source Sans Pro", sans-serif; color: #444
 .logo { font-family: "Sacramento", cursive; font-weight: 400; font-size: 104px; line-height: 1; text-align: center; }
 
 /* Lists */
+.list { list-style-type: none; margin: 0; padding: 0; }
+
 .list .active { font-weight: bold; color: red; }
 
 .list-horizontal li { margin-left: 10px; display: inline-block; }
