@@ -89,6 +89,12 @@
     html = html + linkHTML;
     }
     titleList.innerHTML = html;
+      
+    const links = document.querySelectorAll('.titles a');
+    
+    for(let link of links){
+        link.addEventListener('click', titleClickHandler);
+    }
   }
     /* for each article - second way */
     //const articles = document.querySelectorAll(optArticleSelector);
@@ -100,11 +106,7 @@
 //}
 
 generateTitleLinks();
-const links = document.querySelectorAll('.titles a');
-    
-for(let link of links){
-  link.addEventListener('click', titleClickHandler);
-}
+
 
 /* TAGS */
 /* [NEW] function looking for the smallest and highest number of tags */
